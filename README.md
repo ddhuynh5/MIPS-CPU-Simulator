@@ -8,3 +8,7 @@ In the command line where this markdown file is located do the following
 
 # Design:
 The
+
+# TO-DO:
+- README
+- GUI
