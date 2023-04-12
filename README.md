@@ -15,7 +15,7 @@ In the command line where this markdown file is located do the following
     ```
 
 # Design:
-We decided to use the pipeline architecture since it allowed for the most realistic and accurate representation for our MIPS Simulator. We do not support single stepping, since that is not a project requirement. 
+We decided to use the pipeline architecture since it allowed for the most realistic and accurate representation for our MIPS Simulator.
 
 # TO-DO:
 - README
