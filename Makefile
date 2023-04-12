@@ -18,7 +18,7 @@ default: classes
 classes: $(CLASSES:.java=.class)
 
 run: classes
-	$(JV) $(MAIN) $(file) >> output.txt
+	$(JV) $(MAIN) $(file) $(step)
 
 clean:
 	$(RM) *.class

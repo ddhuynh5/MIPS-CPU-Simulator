@@ -3,11 +3,19 @@ Dennis Huynh & Wyatt Dorris
 
 # Usage:
 In the command line where this markdown file is located do the following
-1. Type 'make' to compile the program
-2. Type './smolmips myprog.bin' to run the program
+1. To compile the program
+    ```
+        make
+    ```
+2. To run the program
+    ```
+        make run file=[INPUT FILE HERE] step=[true or false]
+        TRUE - step each cycle
+        FALSE - run entire simulation
+    ```
 
 # Design:
-The
+We decided to use the pipeline architecture since it allowed for the most realistic and accurate representation for our MIPS Simulator. We do not support single stepping, since that is not a project requirement. 
 
 # TO-DO:
 - README

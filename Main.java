@@ -8,7 +8,18 @@ public class Main {
     public static void main(String[] args) {
         MIPSModel model = new MIPSModel();
         MIPSView view = new MIPSView();
-        MIPSController controller = new MIPSController(model, view);
+
+        String stepString = args[1];
+        boolean stepFlag = false;
+        
+        try {
+            stepFlag = Boolean.parseBoolean(stepString);
+        } catch(Error e) {
+            // Handle the error
+            System.out.println("Step should be true or false: " + e.getMessage());
+            System.exit(1);
+        }
+        MIPSController controller = new MIPSController(model, view, stepFlag);
         
         ArrayList<Integer> instructions = new ArrayList<>();
         
@@ -26,8 +37,10 @@ public class Main {
             file.close();
         } catch (FileNotFoundException e) {
             System.out.println("File not found: " + e.getMessage());
+            System.exit(1);
         } catch (IOException e) {
             System.out.println("Error reading file: " + e.getMessage());
+            System.exit(1);
         }
 
         // ArrayList<String> hexInstructions = new ArrayList<>();

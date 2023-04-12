@@ -26,4 +26,8 @@ public class MIPSView {
     public void displayHalted() {
         System.out.println("Simulation halted.");
     }
+
+    public void displayCounts(String type, int counts) {
+        System.out.println(type + " Counts: " + counts);
+    }
 }
