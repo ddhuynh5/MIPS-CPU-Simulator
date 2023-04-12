@@ -17,6 +17,6 @@ In the command line where this markdown file is located do the following
 # Design:
 We decided to use the pipeline architecture since it allowed for the most realistic and accurate representation for our MIPS Simulator.
 
-# TO-DO:
-- README
-- GUI
+# Sample input files
+alu.out - sample binary (use this in run if you want)
+alu.s - sample human-readable instructions
